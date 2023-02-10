@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/je!je!.ico" alt="logo" />
+    <link rel="stylesheet" type="text/css" href="css/normalizev8.0.1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <title>Slusark Portfolio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- Add logo image -->
+      <div class="page-header__item">
+        <img src="img/je!je!logo.png" alt="Website logo" class="logo" />
+      </div>
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact__details">
+        <h1 class="contact__details--name">Jessica Slusark</h1>
+        <p class="contact__details--info">
+          Berlin, Germany <br />
+          <img src="https://via.placeholder.com/10x10.png" alt="phone icon" />
+          <a href="tel:+4917636301966">Tel: +4917636301966</a>
+          <br />
+          <img src="https://via.placeholder.com/10x10.png" alt="mail icon" />
+          <a href="mailto:slusark.jessica@gmail.com"
+            >slusark.jessica@gmail.com</a
+          >
+          <br />
+          <img src="https://via.placeholder.com/10x10.png" alt="skype icon" />
+          <a href="skype:jessica.slusark"> jessica.slusark</a>
+        </p>
+      </section>
+      <form action="" method="post" id="contact-form">
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required />
+        <br />
+        <label for="contact-number">Phone number:</label>
+        <input type="text" id="contact-number" name="contact-number" />
+        <br />
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="contact-email" required />
+        <br />
+        <label for="contact-message" class="form__message">Message:</label>
+        <br />
+        <textarea
+          id="contact-message"
+          name="contact-message"
+          maxlength="500"
+          placeholder="Hi Jessica, I am..."
+          rows="10"
+          cols="80"
+          required
+        ></textarea>
+        <br />
+        <input type="submit" value="Submit" class="submit__button" />
+      </form>
+    </main>
+    <footer>
+      <p>Find me on</p>
+      <div class="social media">
+        <a
+          href="https://github.com/birdieber"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img
+            src="./img/github.svg"
+            alt="icon linked to github page"
+            class="footer__social-icon"
+          />
+        </a>
+        <a
+          href="https://twitter.com/thelazyred"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img
+            src="./img/twitter.svg"
+            alt="icon linked to twitter page"
+            class="footer__social-icon"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jessicaslusark/"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <img
+            src="./img/linkedin.svg"
+            alt="icon linked to linkedin page"
+            class="footer__social-icon"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
