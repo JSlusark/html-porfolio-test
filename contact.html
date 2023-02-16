@@ -12,8 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
     <title>Slusark Portfolio</title>
   </head>
   <body>
@@ -63,7 +63,16 @@
           <br />
         </p>
       </section>
-      <form action="" method="post" id="contact-form">
+      <!--added _redirects file for 405 problem of nettifly not refreshing the page due to the fact that the form does not "post" anything
+      As sggested changed to "get"method and added / as action which means to go to homepage
+    also added alert that shows onsubmit-->
+      <form
+        action="/"
+        method="get"
+        id="contact-form"
+        onsubmit="alert
+      ('Thanks for contcting me!')"
+      >
         <label for="contact-name">Name:</label>
         <input type="text" id="contact-name" name="contact-name" required />
 

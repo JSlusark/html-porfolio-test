@@ -12,8 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
     <title>Slusark Portfolio</title>
   </head>
   <body>
@@ -90,33 +90,66 @@
         <h3 class="introduction__h3--exclamation">
           Let's create something awesome together!
         </h3>
+        <!--SKill bar from codepen https://codepen.io/nickspiel/pen/pojEop?editors=0110-->
+        <ul class="skills-bar-container">
+          <li>
+            <div class="progressbar-title">
+              <h3>HTML5</h3>
+              <span class="percent" id="html-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class="progressbar progressred" id="progress-html"></span>
+            </div>
+          </li>
+          <li>
+            <div class="progressbar-title">
+              <h3>CSS / SASS</h3>
+              <span class="percent" id="css-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class="progressbar progressblue" id="progress-css"></span>
+            </div>
+          </li>
+
+          <li>
+            <div class="progressbar-title">
+              <h3>JavaScript / jQuery</h3>
+              <span class="percent" id="javascript-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span
+                class="progressbar progresspurple"
+                id="progress-javascript"
+              ></span>
+            </div>
+          </li>
+
+          <li>
+            <div class="progressbar-title">
+              <h3>PHP</h3>
+              <span class="percent" id="php-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class="progressbar progressorange" id="progress-php"></span>
+            </div>
+          </li>
+
+          <li>
+            <div class="progressbar-title">
+              <h3>AngularJS</h3>
+              <span class="percent" id="angular-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span
+                class="progressbar progressgreen"
+                id="progress-angular"
+              ></span>
+            </div>
+          </li>
+        </ul>
+        <!--end of skillbar-->
       </section>
-      <table>
-        <thead class="table__head">
-          <tr class="table__title">
-            <th class="table__title--name">Skills</th>
-            <th class="table__title--name">Experience</th>
-            <th class="table__title--name">Level</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML5</td>
-            <td>3y</td>
-            <td>Advanced</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>2y</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>1y</td>
-            <td>Beginner</td>
-          </tr>
-        </tbody>
-      </table>
+
       <a
         href="files/cv.pdf"
         class="about__download-button"
